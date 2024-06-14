@@ -1,0 +1,29 @@
+.searchbar {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+#home {
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+}
+
+#home::before {
+  content: "";
+   background: url(https://st2.depositphotos.com/1016676/6870/i/450/depositphotos_68708177-stock-photo-fisherman.jpg);
+   height: 100%;
+    background-size: cover;
+    object-fit: fill;
+
+}
+.main {
+ 
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 70%;
+  
+  margin-top: 350px;
+}
