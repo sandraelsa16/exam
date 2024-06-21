@@ -24,6 +24,40 @@
   flex-direction: column;
   position: absolute;
   left: 70%;
-  
   margin-top: 350px;
+}
+
+.main button {
+
+  width: 130px;
+  background-color: darkblue;
+  color: white;
+  padding: 5px;
+  border: none;
+}
+
+.container1 img{
+  width: 400px;
+  height: 250px;
+}
+
+.container2 img {
+  width: 400px;
+  height: 500px;
+}
+.container3 img{
+  width: 400px;
+  height: 250px;
+}
+
+.card-body {
+  color: white;
+  position: absolute;
+}
+
+.card-body a {
+  background-color: transparent ;
+  color:lightblue ;
+  border: 1px solid lightblue;
+  border-radius: 0px;
 }
