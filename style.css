@@ -37,20 +37,20 @@
 }
 
 .container1 img{
-  width: 400px;
+  width: 350px;
   height: 250px;
 }
 
 .container2 img {
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 515px;
 }
 .container3 img{
-  width: 400px;
+  width: 350px;
   height: 250px;
 }
 
-.card-body {
+.gallery-body {
   color: white;
   position: absolute;
 }
@@ -60,4 +60,9 @@
   color:lightblue ;
   border: 1px solid lightblue;
   border-radius: 0px;
+}
+
+.collection img{
+  width: 150px;
+  height: 150px;
 }
