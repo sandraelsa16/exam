@@ -7,6 +7,7 @@
   margin-top: 20px;
 }
 
+
 .loginpart {
   margin-top:60px ;
 }
@@ -26,6 +27,7 @@
 .fa-droplet {
   font-size: 60px;
   margin-left: 13%;
+  margin-bottom: 10px;
 }
 
 .heading1 {
@@ -155,8 +157,6 @@
  text-shadow: 2px 2px 2px black;
 }
 
-
-
 .gallery-body h5 {
   font-family:  "Playfair Display", serif;
   font-size: 30px;
@@ -168,13 +168,134 @@
   border: 1px solid lightblue;
   border-radius: 0px;
 }
+.centered-hr {
+  width: 50%; 
+  margin: 20px auto; 
+  border: 1px solid #6f6f6f;
+}
+
+.name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.price p {
+  margin: 0 20px;
+}
+
+.price button {
+  height: 40px;
+  background-color: darkblue;
+  color: white;
+  border: 0;
+}
+
+.price button:hover{
+  border: 1px solid darkblue;
+  background-color: white;
+  color: darkblue;
+}
+
+.slide {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.mrp{
+  text-decoration: line-through;
+  color: grey;
+}
+
+.offer{
+  font-size: x-large;
+  font-weight: bold;
+  color: lightskyblue;
+}
+
+.collections {
+  margin: 100px ;
+  text-align: center;
+  
+}
+
+.drop{
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  font-size: xx-large;
+  position: absolute;
+  left: 530px;
+  z-index: 1;
+}
 
 .collection img{
   width: 150px;
   height: 150px;
 }
 
+.footer-contact{
+  margin-top: 50px;
+  padding-top: 10px;
+  background-color: rgb(224, 226, 224);
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.droplet {
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  font-size: xx-large;
+  position: absolute;
+  left: 560px;
+  z-index: 1;
+}
 .contact-gallery img {
   height: 180px;
-  width: 170px;
+  width: 200px;
+}
+
+.payment-img {
+  margin-top: 50px;
+  
+}
+.payment-img img{
+  width: 50px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.footer-contact h6 {
+  font-family: Playfair Display, serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer-contact a {
+  text-decoration: none;
+}
+
+.email {
+ position: relative;
+}
+
+.envolope {
+  position:absolute;
+  top: 57px; 
+  left:5px;
+}
+
+.mail {
+  padding:5px 20px ;
+  height: 40px;
+}
+
+.email button{
+  position: absolute;
+  border-radius: 0;
+  height: 40px;
 }
