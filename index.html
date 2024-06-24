@@ -15,6 +15,13 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -31,48 +38,52 @@
   <body>
     <!-- navbar -->
     <div class="d-flex">
-      <div class="col searchbar">
-        <input type="text" placeholder="Search" />
-        <i
-          class="fa-solid fa-magnifying-glass fa-xl"
-          style="color: #74c0fc"
-        ></i>
+      <div class="col searchbar search">
+        <input type="text"  placeholder="Search" />
+        <button class="btn btn-outline-info bg-info" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
       </div>
-      <div class="col searchbar">
-        <p>GRANERLY <br> FISH</p>
+      <div class="col heading">
+        <i class="fa-solid fa-droplet" style="color: #61baff;"></i>
+        <p class="gnarly heading1 fs-1">GNARLY</p>
+        <p class="fish heading2 fs-6">FISH</p>
       </div>
-      <div class="d-flex searchbar">
-        <p>LOGIN | REGISTER</p>
-        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img height="20px" src="https://static.vecteezy.com/system/resources/previews/024/044/741/non_2x/shopping-cart-logo-design-cart-icon-ecommerce-logo-vector.jpg" alt="">
+      <div class="d-flex loginpart">
+        <p style="color: #61baff;" class="me-4">LOGIN</p>
+        <p style="color: gray;">|</p>
+        <p class="ms-4">REGISTER</p>
+        <button class="btn btn-outline-secondary  dropdown-toggle mx-3 cart" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-cart-shopping"></i>
           </button>
+          <p class="count">0</p>
       </div>
     </div>
-     <hr>
-     <div class="row">
-        <div class="col"></div>
-        <div class="col-2"> HOME</div>
-        <div class="col-2"> MENS</div>
-        <div class="col-2"> WOMEN'S</div>
-        <div class="col-2"> ABOUT US</div>
-        <div class="col-2"> CONTACT US</div>
-        <div class="col"></div>
+     
+     <div class="row ">
+      
+        <div class="col blank"></div>
+        <div class="col-2 link"><a href="">HOME</a></div>
+        <div class="col-2 link"><a href="">MEN'S</a></div>
+        <div class="col-2 link"><a href="">WOMENS</a></div>
+        <div class="col-2 link"><a href="">ABOUT US</a></div>
+        <div class="col-2 link"><a href="">CONTACT US</a></div>
+        <div class="col blank"></div>
      </div>
     <!-- banner -->
      <section id="home">
-       <div class="main"> <h1>GNARLY FISH</h1>
-              <p>IS A FISHING, DIVING, BOATING AND <br> WATERSPOUTS COMPANY</p>
+       <div class="main"> <h1 style="font-family: Playfair Display, serif; letter-spacing: 4px; word-spacing: 5px; font-size:50px;"><span style="color: darkblue;">GNARLY</span><span style="color:#2598f1;"> FISH</span></h1>
+              <p class="fs-5">IS A FISHING, DIVING, BOATING AND <br> WATERSPOUTS COMPANY</p>
               <button>SHOP NOW ></button>
       </div>
      </section>
 
      <!-- gallery -->
-      <section class="d-flex justify-content-evenly mt-3 gallery">
+    
+    <section class="d-flex justify-content-evenly align-items-center mt-3 gallery container">
         <!-- card -->
         <div class="container1">
           <div class="card" style="width: 18rem;">
             <img src="https://assets.zeezest.com/blogs/PROD_47_1674625062759_thumb_1200.png?w=1920&q=75" class="card-img-top" alt="...">
-            <div class="card-body gallery-body">
+            <div class="card-body gallery-body card1">
               <h5 class="card-title">HATS</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <a href="#" class="btn btn-primary">ADD TO CART</a>
@@ -80,7 +91,7 @@
           </div>
           <div class="card mt-3" style="width: 18rem;">
             <img src="https://st2.depositphotos.com/2056297/10410/i/450/depositphotos_104105760-Handsome-man-wearing-white-clothes.jpg" class="card-img-top" alt="...">
-            <div class="card-body gallery-body">
+            <div class="card-body gallery-body card1">
               <h5 class="card-title">SHIRTS</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <a href="#" class="btn btn-primary">ADD TO CART</a>
@@ -90,17 +101,18 @@
         <div class="container2">
           <div class="card" style="width: 18rem;">
             <img src="https://nevico.hr/images/uploads/rotator_10.jpg" class="card-img-top" alt="...">
-            <div class="card-body gallery-body">
+            <div class="card-body gallery-body card2">
               <h5 class="card-title">HEAD DEFENSE</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <a href="#" class="btn btn-primary">ADD TO CART</a>
-            </div></div>
+            </div>
+          </div>
         </div>
 
         <div class="container3">
-          <div class="card" style="width: 18rem;">
-            <div class="d-flex justify-content-center align-items-center" style="max-width: 100%; height: auto;"><img src="https://media.istockphoto.com/id/813338420/photo/opening-a-beer.jpg?s=612x612&w=0&k=20&c=jIqmBMWAwIWt3Lv9Isl8JTSYJ5Y8kTiGJRRrfj880OY=" class="card-img-top" alt="..."></div>
-            <div class="card-body gallery-body">
+          <div class="card " style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/813338420/photo/opening-a-beer.jpg?s=612x612&w=0&k=20&c=jIqmBMWAwIWt3Lv9Isl8JTSYJ5Y8kTiGJRRrfj880OY=" class="card-img-top" alt="...">
+            <div class="card-body gallery-body card1">
               <h5 class="card-title">GEAR</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <a href="#" class="btn btn-primary">ADD TO CART</a>
@@ -108,7 +120,7 @@
             </div>
           <div class="card mt-3" style="width: 18rem;">
             <img src="https://www.oldmutualinvest.com/v3/assets/bltf97ab615862b2667/blt69d400510f8b92ed/65bb975eecb4a4040a284a72/ft-q12022.webp" class="card-img-top" alt="...">
-            <div class="card-body gallery-body">
+            <div class="card-body gallery-body card1">
               <h5 class="card-title">WOMEN</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <a href="#" class="btn btn-primary">ADD TO CART</a>
@@ -179,167 +191,124 @@
         <section class="contact">
           <h2>GNARLY FISH #INSTAGRAM</h2>
           <hr>
-          <footer class="bg-body-tertiary text-center">
-            <!-- Grid container -->
-            <div class="container p-4">
-              <!-- Section: Images -->
-              <section class="">
-                <div class="row">
-                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                    <div data-mdb-ripple-init
-                      class="bg-image hover-overlay shadow-1-strong rounded"
-                      data-ripple-color="light"
-                    >
-                      <img src="https://www.thefisherman.com/wp-content/uploads/2019/07/2019-7-12-common-mistakes-Mistakes-3.jpg" class="w-100" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                    <div data-mdb-ripple-init
-                      class="bg-image hover-overlay shadow-1-strong rounded"
-                      data-ripple-color="light"
-                    >
-                      <img src="https://assets.zeezest.com/blogs/PROD_47_1674625062759_thumb_1200.png?w=1920&q=75" height="108px" class="w-100" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                    <div data-mdb-ripple-init
-                      class="bg-image hover-overlay shadow-1-strong rounded"
-                      data-ripple-color="light"
-                    >
-                      <img src="https://as2.ftcdn.net/v2/jpg/03/61/36/19/1000_F_361361907_lTdKMBuDUcpFKx6m9Rk5C3YWSVQawhnX.jpg" class="w-100" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                    <div data-mdb-ripple-init
-                      class="bg-image hover-overlay shadow-1-strong rounded"
-                      data-ripple-color="light"
-                    >
-                      <img src="https://st2.depositphotos.com/1016676/6870/i/450/depositphotos_68708177-stock-photo-fisherman.jpg" class="w-100" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                    <div data-mdb-ripple-init
-                      class="bg-image hover-overlay shadow-1-strong rounded"
-                      data-ripple-color="light"
-                    >
-                      <img src="https://cpimg.tistatic.com/05791652/b/4/Denim-Shirts.jpg" class="w-100" height="110px"/>
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                    <div data-mdb-ripple-init
-                      class="bg-image hover-overlay shadow-1-strong rounded"
-                      data-ripple-color="light"
-                    >
-                      <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="w-100" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- Section: Images -->
-            </div>
-            <!-- Grid container -->
-            <section class="">
-              <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                  <!-- Grid column -->
-                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                      <i class="fas fa-gem me-3"></i>Company name
-                    </h6>
-                    <p>
-                      Here you can use rows and columns to organize your footer content. Lorem ipsum
-                      dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                  </div>
-                  <!-- Grid column -->
-          
-                  <!-- Grid column -->
-                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                      Products
-                    </h6>
-                    <p>
-                      <a href="#!" class="text-reset">Angular</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">React</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Vue</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Laravel</a>
-                    </p>
-                  </div>
-                  <!-- Grid column -->
-          
-                  <!-- Grid column -->
-                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                      Useful links
-                    </h6>
-                    <p>
-                      <a href="#!" class="text-reset">Pricing</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Settings</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Orders</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Help</a>
-                    </p>
-                  </div>
-                  <!-- Grid column -->
-          
-                  <!-- Grid column -->
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                    <p>
-                      <i class="fas fa-envelope me-3"></i>
-                      info@example.com
-                    </p>
-                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-                  </div>
-                  <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-              </div>
-            </section>
-            <!-- Section: Links  -->
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-              © 2020 Copyright:
-              <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-          </footer>
+          <div class="d-flex justify-content-evenly contact-gallery">
+            <img src="https://www.thefisherman.com/wp-content/uploads/2019/07/2019-7-12-common-mistakes-Mistakes-3.jpg"  />
+            <img src="https://assets.zeezest.com/blogs/PROD_47_1674625062759_thumb_1200.png?w=1920&q=75"  />
+            <img src="https://as2.ftcdn.net/v2/jpg/03/61/36/19/1000_F_361361907_lTdKMBuDUcpFKx6m9Rk5C3YWSVQawhnX.jpg" />
+            <img src="https://st2.depositphotos.com/1016676/6870/i/450/depositphotos_68708177-stock-photo-fisherman.jpg" />
+            <img src="./images/Denim-Shirts.jpg" />
+            <img src="./images/fishing.png" />
+            <img src="https://m.media-amazon.com/images/I/71wCsv3qrrL._AC_UF1000,1000_QL80_.jpg" />
+          </div>
+
+          <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+ 
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase  mb-4">
+            Navigation
+          </h6>
+          <p>
+            <a href="">Home</a>
+          </p>
+          <p>
+            <a href="">Men's</a>
+          </p>
+          <p>
+            <a href="">Women's</a>
+          </p>
+          <p>
+            <a href="">About Us</a>
+          </p>
+          <p>
+            <a href="">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase  mb-4">
+            Social Media
+          </h6>
+          <p>
+            <a href="#!" class="text-reset"><i class="fab fa-facebook-f"></i>Facebook</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"><i class="fab fa-twitter"></i>Twitter</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"><i class="fa-brands fa-google-plus-g"></i>Google</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"><i class="fa-brands fa-youtube"></i>Youtube</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"><i class="fab fa-instagram"></i>Instagram</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase mb-4">
+            Help
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Customer Service</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Countries We Ship To</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Returns & Exchange</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Size Guide</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Wholesale Inquires</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase mb-4">NewsLetter</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
         </section>
 
   </body>
